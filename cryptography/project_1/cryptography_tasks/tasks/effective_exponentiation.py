@@ -18,6 +18,12 @@ return result = 8
 END
 """
 def binary_exponentiation(b, k, n):
+    """
+    :param b: base
+    :param k: exp
+    :param n: mod n
+    :return: b**k mod n
+    """
     result = 1
 
     while k > 0:
