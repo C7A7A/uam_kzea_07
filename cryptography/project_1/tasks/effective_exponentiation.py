@@ -44,11 +44,19 @@ def effective_exponentiation():
     print("--- EFFECTIVE EXPONENTIATION ---")
 
     n = int(input("Enter n: "))
-    group_z_multiplication = [*range(0, n)]
-    print(f'group Z with multiplication: {group_z_multiplication}')
+    # group_z_multiplication = [*range(0, n)]
+    # print(f'group Z with multiplication: {group_z_multiplication}')
 
     k = int(input('Enter k: '))
+    b = int(input('Enter b: '))
 
-    for num in group_z_multiplication:
-        num_to_k = binary_exponentiation(num, k, n)
-        print(f'{num} - {num_to_k}')
+    # if b not in group_z_multiplication:
+    #     print('b not in group')
+    #     return
+
+    num_to_k = binary_exponentiation(b, k, n)
+    print(f'{b} - {num_to_k}')
+
+    # for num in group_z_multiplication:
+    #     num_to_k = binary_exponentiation(num, k, n)
+    #     print(f'{num} - {num_to_k}')

@@ -3,7 +3,7 @@ from tasks.prime_number_fermat import prime_number_fermat
 from tasks.effective_exponentiation import effective_exponentiation
 from tasks.square_remainder import square_remainder
 from tasks.square_root import square_root
-
+from tests import tests
 
 if __name__ == '__main__':
     while True:
@@ -30,6 +30,8 @@ if __name__ == '__main__':
                 square_remainder()
             case '5':
                 square_root()
+            case 't':
+                tests()
             case 'q':
                 break
             case _:

@@ -8,9 +8,6 @@ def fermat_primality_test(n, number_of_tests):
     if n == 2 or n == 3:
         return True
 
-    random_num = 0
-    result = 0
-
     for _ in range(number_of_tests):
         random_num = random.randint(2, n - 2)
 
