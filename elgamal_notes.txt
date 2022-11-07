@@ -1,0 +1,29 @@
+GENEROWANIE KLUCZA
+1. znajdź p - liczbe pierwszą
+2. znajdź g - generator grupy liczb_względnie_pierwszych(p)
+3. losuj q < x < p
+4. oblicz y = g^x mod p
+5. K = (p, q, y) - klucz publiczny
+k = (x, p)
+
+---
+g należy do liczb_względnie_pierwszych(p)
+ord_p(g) = p - 1
+g = 1 mod p
+
+1. losuj q - liczbe pierwsza
+2. oblicz p = 2q + 1
+3. jeśli p nie jest liczbą pierwszą to wróc do 1.
+4. zwróć p
+
+p - 1 = 2q
+g^2 != 1 (mod p)
+g^q != 1 (mod p) 
+---
+
+SZYFROWANIE ELGAMALA
+K = (p, q, y), 1 < M < p
+1. losuj 1 < r < p
+2. oblicz C1 = g^r mod p
+3. oblicz C2 = M * y^r (mod p)
+4. C = [C1, C2]
