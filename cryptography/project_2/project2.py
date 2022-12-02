@@ -16,4 +16,4 @@ def start():
         x2, y2 = get_random_point(a, b, p)
 
         x3, y3 = calc_sum_points(x1, y1, x2, y2, a, p)
-        # get_multiply_point()
+        x4, y4 = get_multiply_point(x1, y1, a, p, 10)
