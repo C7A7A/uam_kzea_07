@@ -1,8 +1,8 @@
-from tasks.reciprocal_euler_group import extended_euklides
-from tasks.prime_number_fermat import fermat_primality_test
-from tasks.effective_exponentiation import binary_exponentiation
-from tasks.square_remainder import check_square_remainder
-from tasks.square_root import check_square_root
+from .tasks.reciprocal_euler_group import extended_euklides
+from .tasks.prime_number_fermat import fermat_primality_test
+from .tasks.effective_exponentiation import binary_exponentiation
+from .tasks.square_remainder import check_square_remainder
+from .tasks.square_root import check_square_root
 
 
 def tests():

@@ -27,23 +27,18 @@ def extended_euklides(a, b):
 
     # b -> NWD
     # x, y -> a * x + b * y = b
-    # return b, x, y
-    return x
+    #return b, x, y
+    return x % b
+
 
 def reciprocal_euler_group():
     print("--- RECIPROCAL EULER GROUP ---")
 
     n = int(input("Enter n: "))
-    # relatively_prime_numbers = create_rel_prime_numbers_group(n)
-    # print(f'Relatively prime numbers to {n}: {relatively_prime_numbers}')
-
     b = int(input("Enter b: "))
 
-    # if b not in relatively_prime_numbers:
-    #     print('b not in group')
-    #     return
-
-    reciprocal_num = (extended_euklides(b, n)[1]) % n
+    # reciprocal_num = (extended_euklides(b, n)[1]) % n
+    reciprocal_num = extended_euklides(b, n)
     print(f'{b} - {reciprocal_num}')
 
     # for num in relatively_prime_numbers:
