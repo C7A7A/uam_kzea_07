@@ -16,6 +16,7 @@ def create_rel_prime_numbers_group(n):
 
 
 def extended_euklides(a, b):
+    start_b = b
     x, y, u, v = 0, 1, 1, 0
 
     while a != 0:
@@ -28,7 +29,8 @@ def extended_euklides(a, b):
     # b -> NWD
     # x, y -> a * x + b * y = b
     #return b, x, y
-    return x % b
+    # print("b: {}, x: {}, y: {}".format(b, x, y))
+    return x % start_b
 
 
 def reciprocal_euler_group():

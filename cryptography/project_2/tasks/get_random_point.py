@@ -9,7 +9,7 @@ def calc_elliptical_curve(a, b, p, x):
 
 
 def get_random_point(a, b, p):
-    print("--- GET RANDOM POINT ON ELLIPTICAL CURVE ---")
+    # print("--- GET RANDOM POINT ON ELLIPTICAL CURVE ---")
 
     while True:
         x = rand_number_elliptic(p)
@@ -18,6 +18,6 @@ def get_random_point(a, b, p):
         square_remainder = check_square_remainder(ellipse, p)
         if square_remainder:
             y = check_square_root(ellipse, p)
-            print("x: {}, y: {}".format(x, y))
+            print("P({}, {})".format(x, y))
             return x, y
 

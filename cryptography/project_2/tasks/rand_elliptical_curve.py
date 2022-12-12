@@ -10,7 +10,7 @@ def rand_number_elliptic(p):
 
 
 def rand_elliptical_curve(p):
-    print("--- GENERATE RANDOM ELLIPTICAL CURVE ---")
+    # print("--- GENERATE RANDOM ELLIPTICAL CURVE ---")
 
     while True:
         a = rand_number_elliptic(p)

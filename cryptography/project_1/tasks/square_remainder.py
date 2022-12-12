@@ -6,7 +6,7 @@ def check_square_remainder(a, p):
     # (a**((p - 1) / 2)) mod p
     result = binary_exponentiation(a, exp, p)
 
-    if result != -1:
+    if result != (-1 % p):
         return True
     return False
 
