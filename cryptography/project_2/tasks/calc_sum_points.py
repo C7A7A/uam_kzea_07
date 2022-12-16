@@ -4,9 +4,14 @@ from .get_inverse_point import calculate_inverse
 
 
 def calculate_same_points(x1, y1, a, p):
-    lambd = ((3 * binary_exponentiation(x1, 2, p) + a) * extended_euklides((2 * y1) % p, p)) % p
-    x3 = (binary_exponentiation(lambd, 2, p) - (2 * x1) % p) % p
+    # lambd = ((3 * binary_exponentiation(x1, 2, p) + a) * extended_euklides((2 * y1) % p, p)) % p
+    # x3 = (binary_exponentiation(lambd, 2, p) - (2 * x1) % p) % p
+    # y3 = (lambd * (x1 - x3) - y1) % p
+
+    lambd = (((3 * binary_exponentiation(x1, 2, p)) % p + a) * (extended_euklides((2 * y1) % p, p))) % p
+    x3 = ((binary_exponentiation(lambd, 2, p) % p) - 2 * x1 % p) % p
     y3 = (lambd * (x1 - x3) - y1) % p
+
     return x3, y3
 
 

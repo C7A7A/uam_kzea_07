@@ -11,11 +11,15 @@ def get_multiply_point(x1, y1, a, p, n):
     x3, y3 = float("inf"), float("inf")
 
     while n > 0:
-        if n % 2 == 1:
+
+        if (n % 2) == 1:
             x3, y3 = calculate_different_points(x3, y3, x2, y2, p)
+            # print("x3: {} y3: {}".format(x3, y3))
             n = n - 1
+
         x2, y2 = calculate_same_points(x2, y2, a, p)
+        # print("x2: {} y2: {}".format(x2, y2))
         n = n//2
 
-    print("{} * ({}, {}) = ({}, {})".format(start_n, x1, y1, x3, y3))
+    # print("{} * ({}, {}) = ({}, {})".format(start_n, x1, y1, x3, y3))
     return x3, y3

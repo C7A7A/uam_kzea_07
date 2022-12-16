@@ -10,11 +10,18 @@ def start():
     # while True:
     # p = int(input("Input p = 3 (mod 4): "))
     p = 523133468360889049404922330981983268743289535618129665870465316487757998439707462631766351
-    a = 230494833619330872742071433259892253887918924949625621075110348455162899582640562756609713
-    b = 225785530019760328737805254637561350820485164307786402015943227616074411698429350907607751
-    # a, b = rand_elliptical_curve(p)
-    x1, y1 = get_random_point(a, b, p)
+    # a = 230494833619330872742071433259892253887918924949625621075110348455162899582640562756609713
+    # b = 225785530019760328737805254637561350820485164307786402015943227616074411698429350907607751
+    a, b = rand_elliptical_curve(p)
+    # p = 11
+    # a = 8
+    # b = 1
+    # x_alice = 3
+    # x_bob = 5
 
+    x1, y1 = get_random_point(a, b, p)
+    # x1 = 5
+    # y1 = 1
     x_alice = randint(0, p // 2)
     q1_alice, q2_alice = get_multiply_point(x1, y1, a, p, x_alice)
 
@@ -26,9 +33,9 @@ def start():
 
     print(s_alice, s_bob)
     if s_alice == s_bob:
-        print("EPIC WIN")
+        print("Points are equal")
     else:
-        print("EPIC LOSE")
+        print("Points are not equal")
     # a, b = rand_elliptical_curve(p)
     # a = 1
     # b = 4

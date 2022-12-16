@@ -15,22 +15,24 @@ def create_rel_prime_numbers_group(n):
     return prime_nums
 
 
-def extended_euklides(a, b):
-    start_b = b
+def extended_euklides(a, p):
+    if a < 0:
+        a = a + p
+
+    start_p = p
     x, y, u, v = 0, 1, 1, 0
 
     while a != 0:
-        q = b // a
-        r = b % a
+        q = p // a
+        r = p % a
         m = x - u * q
         n = y - v * q
-        b, a, x, y, u, v = a, r, u, v, m, n
+        p, a, x, y, u, v = a, r, u, v, m, n
 
     # b -> NWD
     # x, y -> a * x + b * y = b
-    #return b, x, y
-    # print("b: {}, x: {}, y: {}".format(b, x, y))
-    return x % start_b
+    # return b, x, y
+    return x % start_p
 
 
 def reciprocal_euler_group():
