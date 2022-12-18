@@ -2,7 +2,7 @@ from .calc_sum_points import calculate_same_points
 from .calc_sum_points import calculate_different_points
 
 
-def get_multiply_point(x1, y1, a, p, n):
+def multiply_point(x1, y1, a, p, n):
     # print("--- MULTIPLY POINT N TIMES---")
     start_n = n
 
