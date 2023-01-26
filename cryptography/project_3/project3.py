@@ -7,14 +7,20 @@ from .tasks.multiplication import multiply
 def start():
     # x = input("Enter x: ")
     # y = input("Enter y: ")
-    x = "FF"
-    y = "10"
-    # print(x)
-    # print(y)
-    # print("Addition: ", addition(x, y))
+    x = "23"
+    y = "F1"
+    print("x: ", x)
+    print("y: ", y)
 
-    # result_x_time = xtime(x)
-    # print("Xtime: ", result_x_time)
-    # print("XtimeBin: ", hex_to_bin(result_x_time))
+    result_add = add(x, y)
+    print("add: ", result_add)
+    print("addBin: ", hex_to_bin(result_add))
 
-    print(multiply(x, y))
+    result_x_time = xtime(x)
+    print("xtime: ", result_x_time)
+    print("xtimeBin: ", hex_to_bin(result_x_time))
+
+    result_multiply = multiply(x, y)
+    print("multiply: ", result_multiply)
+    print("multiplyBin: ", hex_to_bin(result_multiply))
+
