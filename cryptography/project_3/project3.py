@@ -5,10 +5,10 @@ from .tasks.multiplication import multiply
 
 
 def start():
-    # x = input("Enter x: ")
-    # y = input("Enter y: ")
-    x = "23"
-    y = "F1"
+    x = input("Enter x: ")
+    y = input("Enter y: ")
+    # x = "FF"
+    # y = "FF"
     print("x: ", x)
     print("y: ", y)
 
