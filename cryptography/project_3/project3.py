@@ -10,7 +10,9 @@ def start():
     # x = "FF"
     # y = "FF"
     print("x: ", x)
+    print("xBin: ", hex_to_bin(x))
     print("y: ", y)
+    print("yBin: ", hex_to_bin(y))
 
     result_add = add(x, y)
     print("add: ", result_add)
@@ -23,4 +25,3 @@ def start():
     result_multiply = multiply(x, y)
     print("multiply: ", result_multiply)
     print("multiplyBin: ", hex_to_bin(result_multiply))
-
