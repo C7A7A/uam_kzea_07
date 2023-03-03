@@ -1,6 +1,6 @@
 # UAM_KzEA
 
-
+semestr 7 UAM - Kryptografia z elementami algebry
 
 ## Getting started
 
